@@ -2,7 +2,7 @@
 
 <p id="description">Este proyecto es mi trabajo de fin de grado, se trata de una pequeña aplicación financiera. Desarrollada en Python, utiliza una base de datos MongoDB en un contenedor Docker. Esta diseñada para que sea sencilla de iniciar y usar.</p>
 
-<h2>Imagenes del proyecto:</h2>
+<h2>Imágenes del proyecto:</h2>
 
 <img src="img/login.png" alt="project-screenshot" width="800" height="600/">
 
@@ -23,7 +23,7 @@
 ```bash
    python -m venv .venv
 ```
-* Activamos el virtual enviroment: 
+* Activamos el entorno virtual de Python: 
 ```bash
    cd .venv/Scripts 
    activate
@@ -55,7 +55,7 @@
 ```bash
    python -m venv .venv
 ```
-* Activamos el virtual enviroment: 
+* Activamos el entorno virtual de Python: 
 ```bash
    cd .venv/Scripts 
    activate
@@ -68,7 +68,7 @@
 ```bash
    ren .env.example .env
 ```
-* Modificamos el archivo .env en donde se encuentre el puerto de nuestro servicio MongoDB.
+* Modificamos el archivo .env asignandole la URI de nuestro servicio MongoDB.
 * Ejecutamos el comando para iniciar la aplicación: 
 ```bash
    flet run app/main.py
