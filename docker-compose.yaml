@@ -1,0 +1,8 @@
+services:
+  mongodb:
+    image: mongodb/mongodb-community-server:6.0-ubi8
+    container_name: app_db
+    volumes:
+      - type: bind
+        source: ./data
+        target: /data/db

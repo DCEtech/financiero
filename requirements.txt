@@ -1,0 +1,6 @@
+flet
+flet-route
+matplotlib
+pymongo
+python-dotenv
+bcrypt

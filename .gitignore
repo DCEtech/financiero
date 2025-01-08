@@ -1,0 +1,21 @@
+# Entorno de desarrollo
+.idea/
+.venv/
+__pycache__/
+
+# Archivos generados por Docker
+docker.output
+
+# Variables de entorno (manténlas fuera del repositorio)
+.env
+
+# Datos sensibles o temporales
+data/
+
+# Ignorar contenido de la carpeta storage
+storage/
+
+# Archivos de compilación de Python
+*.pyc
+*.pyo
+*.pyd
