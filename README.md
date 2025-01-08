@@ -28,7 +28,7 @@
    cd .venv/Scripts 
    activate
 ```
-* Instalamos las librerias ubicadas en requirements.txt:
+* Instalamos las librerías ubicadas en requirements.txt:
 ```bash
    pip install -r ../../requirements.txt
 ```
@@ -36,7 +36,7 @@
 ```bash
    ren .env.example .env
 ```
-* Ejecuar el archivo .bat.
+* Ejecutar el archivo .bat.
 
 <h2>Ejecución con MongoDB:</h2>
 <h3>- Programas necesarios: </h3>
@@ -60,7 +60,7 @@
    cd .venv/Scripts 
    activate
 ```
-* Instalamos las librerias ubicadas en requirements.txt:
+* Instalamos las librerías ubicadas en requirements.txt:
 ```bash
    pip install -r ../../requirements.txt
 ```
