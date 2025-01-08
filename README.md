@@ -6,7 +6,7 @@
 
 <img src="img/login.png" alt="project-screenshot" width="800" height="600/">
 
-<h2>Ejecucion con Docker:</h2>
+<h2>Ejecución con Docker:</h2>
 <h3>- Programas necesarios: </h3>
 
 * Docker 27.4.0
