@@ -32,11 +32,14 @@
 ```bash
    pip install -r ../../requirements.txt
 ```
-* Renombramos el env.example: 
+* Renombramos el env.example ubicado en el directorio raíz: 
 ```bash
    ren .env.example .env
 ```
-* Ejecutar el archivo .bat.
+* Ejecutar el archivo .bat en el directorio raíz.
+```bash
+   run
+```
 
 <h2>Ejecución con MongoDB:</h2>
 <h3>- Programas necesarios: </h3>
@@ -64,7 +67,7 @@
 ```bash
    pip install -r ../../requirements.txt
 ```
-* Renombramos el env.example: 
+* Renombramos el env.example ubicado en el directorio raíz: 
 ```bash
    ren .env.example .env
 ```
@@ -83,7 +86,7 @@
 
 <h2>💻 Realizado con:</h2>
 
-Tecnologias usadas en el proyecto:
+Tecnologías usadas en el proyecto:
 
 *   Python
 *   Flet
