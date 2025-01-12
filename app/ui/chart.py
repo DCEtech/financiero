@@ -79,8 +79,7 @@ def chart(page: ft.Page, params: Params, basket: Basket):
             [
                 ft.Row(
                     [user_info_button],
-                    alignment="start",
-                    vertical_alignment="center"
+                    alignment="start"
                 ),
                 ft.Container(
                     content=tittle_app,
@@ -88,11 +87,17 @@ def chart(page: ft.Page, params: Params, basket: Basket):
                 ),
                 ft.Row(
                     [chart_container],  
-                    expand=True
-                )
-            ]
+                    expand=True,
+                    alignment="center",
+                    wrap=True
+                ),
+            ],
+            alignment="center", 
+            horizontal_alignment="center",  
+            spacing=20,  
+            scroll="adaptive"
         ),
-        padding=ft.padding.only(top=100, left=100, right=100),  
+        padding=ft.padding.only(top=10, left=40, right=40),  
         alignment=ft.alignment.center,  
         expand=True
     )
