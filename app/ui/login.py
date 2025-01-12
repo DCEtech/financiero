@@ -61,7 +61,7 @@ def login(page: ft.Page, params: Params, basket: Basket):
             update_dialog(login_success)
 
             
-    tittle_app = ft.Text(value="Financiero", size=40, weight="bold")
+    tittle_app = ft.Text(value="Financiero", size=30, weight="bold")
  
     text_login = ft.Text(value="Usuario", size=20, weight="bold")
     login_field = ft.TextField(hint_text="Ingrese su usuario", keyboard_type=ft.KeyboardType.TEXT,
@@ -71,8 +71,8 @@ def login(page: ft.Page, params: Params, basket: Basket):
     password_field = ft.TextField(hint_text="Ingrese su contraseña", password=True, keyboard_type=ft.KeyboardType.TEXT,
     max_lines = 1, width=300, height=50, border_radius=10, content_padding=10) 
 
-    login_button = ft.FilledButton(text="Iniciar sesión", on_click=handle_button_login)
-    register_button = ft.FilledButton(text="Registrarse", on_click=handle_button_create_user)
+    login_button = ft.Button(text="Iniciar sesión", on_click=handle_button_login)
+    register_button = ft.Button(text="Registrarse", on_click=handle_button_create_user)
 
     login_advice = ft.Text(value="Si no está registrado, introduzca un usuario y contraseña para añadir sus datos al sistema.", size=14) 
 
@@ -106,7 +106,7 @@ def login(page: ft.Page, params: Params, basket: Basket):
             spacing=20,
             scroll="adaptive"
         ),
-        padding=ft.padding.only(top=100, left=100, right=100),  
+        padding=ft.padding.only(top=100, left=20, right=20),  
         alignment=ft.alignment.center,  
         expand=True
     )
