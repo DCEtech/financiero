@@ -265,11 +265,11 @@ def user_info(page: ft.Page, params: Params, basket: Basket):
     excedente_field = ft.TextField(hint_text="Excedente generado automaticamente", keyboard_type=ft.KeyboardType.TEXT,
     max_lines = 1, width=300, height=50, border_radius=10)
 
-    chart_button = ft.ElevatedButton("Grafico de ahorro", on_click = handle_button_chart)
-    add_button = ft.FilledButton(text="Añadir informacion", on_click = handle_button_add_info)
-    data_button = ft.FilledButton(text="Visualizar datos", on_click = handle_button_click_get_data)
-    update_button = ft.FilledButton(text="Actualizar datos", on_click = handle_button_click_update_data)
-    del_button = ft.FilledButton(text="Borrar datos", on_click = handle_button_click_del_data)
+    chart_button = ft.Button("Grafico de ahorro", on_click = handle_button_chart)
+    add_button = ft.Button(text="Añadir informacion", on_click = handle_button_add_info)
+    data_button = ft.Button(text="Visualizar datos", on_click = handle_button_click_get_data)
+    update_button = ft.Button(text="Actualizar datos", on_click = handle_button_click_update_data)
+    del_button = ft.Button(text="Borrar datos", on_click = handle_button_click_del_data)
 
     exit_button = ft.ElevatedButton("Cerrar sesión", on_click = handle_button_login)
     delete_user_button = ft.ElevatedButton("Eliminar usuario", on_click = handle_button_click_del_user)
@@ -300,67 +300,71 @@ def user_info(page: ft.Page, params: Params, basket: Basket):
     text_date = ft.Text(value=date, size=30, weight="bold")
 
     content = ft.Container(
-       content = ft.Column(
-        [   
-            ft.Row(
+        content=ft.Column(
+            [
+                ft.Row(
                     [exit_button, delete_user_button],
                     alignment="start",  
                     vertical_alignment="center"
                 ),
-            ft.Container(
-                content = tittle_app,
-                padding=ft.padding.only(bottom=40)
-            ),
-            ft.Row(
-                [text_date],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=60
-            ),
-            ft.Row(
-                [text_ingresos, ingresos_field],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=60
-            ),
-            ft.Row(
-                [text_gastos, gastos_field],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=72
-            ),
-            ft.Row(
-                [text_ahorro, ahorro_field],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=72
-            ),
-            ft.Row(
-                [text_excedente, excedente_field],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=50
-            ),
-            ft.Row(
-                [text_month, month_select, text_year, year_select, data_button, update_button, del_button],
-                alignment="center",
-                vertical_alignment="center",
-                spacing=20,
-                wrap=True
+                ft.Container(
+                    content=tittle_app,
+                    padding=ft.padding.only(bottom=40)
                 ),
-            ft.Row(
-                [add_button, chart_button], 
-                alignment="center",
-                vertical_alignment="center",
-                spacing=20
-            ),
-        ],
-           alignment="center",  
-           horizontal_alignment="center",  
-           spacing=20,
-           scroll="adaptive"
-       ),
-        padding=ft.padding.only(top=100, left=100, right=100),  
+                ft.Row(
+                    [text_date],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=60
+                ),
+                ft.Row(
+                    [text_ingresos, ingresos_field],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=64,
+                    wrap=True
+                ),
+                ft.Row(
+                    [text_gastos, gastos_field],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=80,
+                    wrap=True
+                ),
+                ft.Row(
+                    [text_ahorro, ahorro_field],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=77,
+                    wrap=True
+                ),
+                ft.Row(
+                    [text_excedente, excedente_field],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=50,
+                    wrap=True
+                ),
+                ft.Row(
+                    [text_month, month_select, text_year, year_select, data_button, update_button, del_button],
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=20,
+                    wrap=True 
+                ),
+                ft.Row(
+                    [add_button, chart_button], 
+                    alignment="center",
+                    vertical_alignment="center",
+                    spacing=20
+                ),
+            ],
+            alignment="center",  
+            horizontal_alignment="center",  
+            spacing=20,
+            scroll="adaptive" 
+        ),
+        padding=ft.padding.only(top=100, left=20, right=20), 
         alignment=ft.alignment.center,  
         expand=True
     )
