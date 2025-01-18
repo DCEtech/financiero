@@ -23,7 +23,7 @@ def chart(page: ft.Page, params: Params, basket: Basket):
 
     ahorro_total = savings[-1] if savings else 0
 
-    tittle_app = ft.Text(value=f"Gráfico de ahorro acumulado {ahorro_total:.2f} €", size=40, weight="bold")
+    tittle_app = ft.Text(value=f"Gráfico de ahorro acumulado {ahorro_total:.2f} €", size=30, weight="bold")
 
     x_labels = []
     for year, months in years_months.items():
@@ -79,8 +79,7 @@ def chart(page: ft.Page, params: Params, basket: Basket):
             [
                 ft.Row(
                     [user_info_button],
-                    alignment="start",
-                    vertical_alignment="center"
+                    alignment="start"
                 ),
                 ft.Container(
                     content=tittle_app,
@@ -88,11 +87,17 @@ def chart(page: ft.Page, params: Params, basket: Basket):
                 ),
                 ft.Row(
                     [chart_container],  
-                    expand=True
-                )
-            ]
+                    expand=True,
+                    alignment="center", 
+                    wrap=True 
+                ),
+            ],
+            alignment="center", 
+            horizontal_alignment="center",  
+            spacing=20,  
+            scroll="adaptive" 
         ),
-        padding=ft.padding.only(top=100, left=100, right=100),  
+        padding=ft.padding.only(top=10, left=40, right=40), 
         alignment=ft.alignment.center,  
         expand=True
     )
