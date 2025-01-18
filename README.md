@@ -115,8 +115,9 @@
 ```bash
    flet run app/ --android
 ```
-* Se generará un código QR en la consola, lo escaneamos con la cámara del movil y nos mostrara la app.
-<p aling=center>
+* Se generará un código QR en la consola, lo escaneamos con la cámara del movil, esto generará una url que sera procesada por la aplicación de flet y nos mostrará la app.
+  
+<p align="center">
    <img src="img/movil_login.png" alt="project-screenshot" width="300" height="600">
 </p>
 
