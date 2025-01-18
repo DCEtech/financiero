@@ -3,8 +3,9 @@
 <p id="description">Este proyecto es mi trabajo de fin de grado, se trata de una pequeña aplicación financiera. Desarrollada en Python, utiliza una base de datos MongoDB en un contenedor Docker. Esta diseñada para que sea sencilla de iniciar y usar.</p>
 
 <h2>Imágenes del proyecto:</h2>
-
-<img src="img/login.png" alt="project-screenshot" width="600" height="400" align="center">
+<p align="center">
+   <img src="img/login.png" alt="project-screenshot" width="600" height="400" align="center">
+</p>
 
 <h2>Ejecución con Docker:</h2>
 <h3>- Programas necesarios: </h3>
