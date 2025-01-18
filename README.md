@@ -4,7 +4,7 @@
 
 <h2>Imágenes del proyecto:</h2>
 
-<img src="img/login.png" alt="project-screenshot" width="800" height="600/">
+<img src="img/login.png" alt="project-screenshot" width="600" height="400">
 
 <h2>Ejecución con Docker:</h2>
 <h3>- Programas necesarios: </h3>
@@ -76,6 +76,49 @@
 ```bash
    flet run app/main.py
 ```
+
+<h2>Testing en Android:</h2>
+<h3>- Programas y requisitos necesarios: </h3>
+
+
+* Aplicación Flet instalada en le dispositivo movil
+* Encontrarse en la misma red local 
+* MongoDB
+
+<h3>- Pasos de instalación: </h3>
+
+* Descargar el repositorio:
+```bash
+   git clone https://github.com/DCEtech/financiero.git
+```
+* Servicio de MonogoDB activo.
+* Crear un arhcivo .venv dentro del proyecto:
+```bash
+   python -m venv .venv
+```
+* Activamos el entorno virtual de Python: 
+```bash
+   cd .venv/Scripts 
+   activate
+```
+* Instalamos las librerías ubicadas en requirements.txt:
+```bash
+   pip install -r ../../requirements.txt
+```
+* Renombramos el env.example ubicado en el directorio raíz: 
+```bash
+   ren .env.example .env
+```
+* Modificamos el archivo .env asignandole la URI de nuestro servicio MongoDB.
+* Ejecutamos el comando para iniciar la aplicación: 
+```bash
+   flet run app/ --android
+```
+* Se generará un código QR en la consola, lo escaneamos con la cámara del movil y nos mostrara la app.
+
+<img src="img/movil_login.png" alt="project-screenshot" width="300" height="600">
+
+
 <h2>Estructura del proyecto:</h2>
 
 * app/: Código fuente de la aplicación.
