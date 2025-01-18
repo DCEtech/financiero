@@ -4,7 +4,7 @@
 
 <h2>Imágenes del proyecto:</h2>
 
-<img src="img/login.png" alt="project-screenshot" width="600" height="400">
+<img src="img/login.png" alt="project-screenshot" width="600" height="400" align="center">
 
 <h2>Ejecución con Docker:</h2>
 <h3>- Programas necesarios: </h3>
