@@ -116,9 +116,9 @@
    flet run app/ --android
 ```
 * Se generará un código QR en la consola, lo escaneamos con la cámara del movil y nos mostrara la app.
-
-<img src="img/movil_login.png" alt="project-screenshot" width="300" height="600">
-
+<p aling=center>
+   <img src="img/movil_login.png" alt="project-screenshot" width="300" height="600">
+</p>
 
 <h2>Estructura del proyecto:</h2>
 
